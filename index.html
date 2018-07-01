@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ordini smart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="immagini/Logo.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oleo Script Swash Caps'>
+<script>
+$(window).scroll(function() {
+    if($(this).scrollTop() > 220)
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+    }
+});
+</script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f6ac03;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  
+  /*  tabs argomenti */
+  
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #f2ac03;
+  padding : 5px 15px;
+}
+
+/* fine tabs argomenti*/
+
+p1, h2 {
+  font-family: 'Oleo Script Swash Caps';
+}
+a{
+color:black;
+}
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0);
+    height: 50px;
+    border-bottom: 0px;
+}
+
+.opaque-navbar.opaque {
+    background-color: #f6ac03;
+    height: 50px;
+
+}
+
+@media (max-width: 992px) {
+  .opaque-navbar {
+    background-color: #f6ac03;
+    height: 40px;
+}
+  ul.nav{
+    background-color: #f6ac03;
+}
+}
+#myNavbar a{
+color: white;
+font-size:23px;
+font-family: 'Oleo Script swash caps';
+}
+#myNavbar li> a:hover {
+    color: #f6ac03;
+    background-color: white;
+    font-family: 'Oleo Script swash caps';
+    font-size:23px;
+}
+#myNavbar li.active > a {
+    color: #f6ac03;
+    background-color: white;
+    font-family: 'Oleo Script swash caps';
+    font-size:23px;
+}
+
+.alignleft { float: left; padding: 0px 15px 15px 0px; }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>    
+      </button>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" >Home</a></li>
+        <li><a href="#mappa">Mappa</a></li>
+        <li><a href="#argomenti">Argomenti</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" id="myNavbar">
+        <li><a href="http://ordinismart.altervista.org/Login.php" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="http://ordinismart.altervista.org/Registrazione.php" ><span class="glyphicon glyphicon-user"></span> Registrazione</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="immagini/slide1.png">  
+      </div>
+
+      <div class="item">
+        <img src="immagini/slide2.png">    
+      </div>
+      
+      <div class="item">
+        <img src="immagini/slide3.png">    
+      </div>
+    </div>
+    
+    <img src="immagini/Mappa_tesina.png" class="img-responsive" style="width:75%; display:block; margin-left: auto; margin-right:auto; padding-bottom: 30px; padding-top: 30px;" alt="Mappa" id="mappa" >
+
+<div class="container"  id="argomenti">
+  <h2 style="font-size:40px; color:#f6ac03; text-align: center;">Argomenti</h2>
+  <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#tecnologie">Le tecnologie utilizzate</a></li>
+    <li><a data-toggle="tab" href="#hosthous">Hosting e Housing</a></li>
+    <li><a data-toggle="tab" href="#custsati">Customer satisfaction</a></li>
+    <li><a data-toggle="tab" href="#ecomm">E-Commerce</a></li>
+    <li><a data-toggle="tab" href="#global">La globalizzazione</a></li>
+    <li><a data-toggle="tab" href="#pasolini">Pasolini no-global?</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div id="tecnologie" class="tab-pane fade">
+            <h3 style="text-align:center;">Le tecnologie utilizzate</h3>
+      <br>
+      <div class="row">
+      <div class="col-xs-7 col-sm-6 col-lg-8">
+            <h4>Architettura MVC</h4>
+      <p>Il Model-view-controller è un pattern architetturale molto diffuso nello sviluppo di sistemi software, in particolare nell'ambito della programmazione orientata agli oggetti, in grado di separare la logica di presentazione dei dati dalla logica di business.
+Questo pattern si posiziona nel livello logico in una architettura multi-tier.<br><br>
+Il pattern è basato sulla separazione dei compiti fra i componenti software che interpretano tre ruoli principali:<br>
+•	Il model fornisce i metodi per accedere ai dati utili all'applicazione;<br>
+•	il view visualizza i dati contenuti nel model e si occupa dell'interazione con utenti e agenti;<br>
+•	il controller riceve i comandi dell'utente (in genere attraverso il view) e li attua modificando lo stato degli altri due componenti.<br>
+<br> // inserire link ghithub con codice //
+</p></div>
+<div class="col-xs-5 col-sm-6 col-lg-4"> 
+<img src="immagini/mvc.png" class="img-responsive" style="width:100%;">
+</div><br>
+
+<div class="col-xs-7 col-sm-6 col-lg-8">
+<h4>Il linguaggio di scripting</h4>
+      <p>Il php è uno dei liguaggi di scripting server-side più diffusi ed è un linguaggio multipiattaforma, questo significa che funziona correttamente su server web equipaggiati con differenti sistemi operativi in quanto esistono differenti versioni dell'interprete PHP in grado di funzionare sia in ambiente UNIX che Win.<br> 
+      <br>// inserire link ghithub con codice //
+</p>
+</div><br>
+<div class="col-xs-7 col-sm-6 col-lg-8">
+<h4>Il database</h4>
+      <p> Una base di dati può essere definita come:<br>
+• una collezione di dati strutturati, progettati per essere usati in
+applicazioni differenti e da differenti utenti, ovvero<br>
+• una raccolta di dati logicamente correlati, utilizzata per modellare una
+realtà.<br>
+In particolare, è un insieme di dati memorizzati senza ridondanze inutili
+(in maniera ottimizzata) per servire più di un’applicazione in
+contemporanea e organizzati in modo da essere indipendenti dai
+programmi che li usano.<br>
+      <br>// inserire link ghithub con codice //
+</p></div>
+<div class="col-xs-5 col-sm-6 col-lg-4"> 
+<img src="immagini/database.png" class="img-responsive" style="width:100%;">
+</div><br>
+</div>
+    </div>
+    <div id="hosthous" class="tab-pane fade">
+      <h3 style="text-align:center;">Hosting e Housing</h3>
+      <h4>Hosting</h4>
+      <p>Con il termine “hosting” si definisce quel servizio che consente ad un sito web di essere ospitato su computer collegati alla rete Internet con hardware (server fisici o server virtuali) e software (sistema operativo e applicativi) di proprietà di un hosting provider.</p>
+      <br><h4>Housing</h4>
+      <p>Con il termine “housing” invece si intende la concessione in locazione ad un utente di uno spazio fisico all’interno della server farm del provider, generalmente all’interno di appositi armadi detti rack, dove inserire un server di proprietà del cliente.
+In questi casi, di solito, l’amministrazione avviene in prima persona da remoto e quindi si è in grado di gestire la propria macchina assumendone il controllo totale. </p>
+    <br><h4>E il server dedicato?</h4>
+      <p>Con server dedicato si intende il noleggio di un server che si trova collocato fisicamente presso un hosting provider. Si tratta di una macchina ad uso esclusivo, e che quindi non è condivisa con altri clienti, come accade generalmente.</p>
+    </div>
+    <div id="custsati" class="tab-pane fade">
+      <h3 style="text-align:center;">Customer satisfaction</h3>
+      <p>Con il termine customer satisfacion, che tradotto significa soddisfazione del cliente, si indica generalmente un articolato processo volto a rilevare il grado di soddisfazione di un cliente/utente nell’ottica del miglioramento del prodotto/servizio offerto. Il termine racchiude un insieme di tecniche e fasi di ricerca sviluppate a partire dagli anni 90 soprattutto nell’ambito delle imprese private. </p>
+   	  <p>Rilevare la customer satisfaction per un’azienda privata o un ente pubblico, significa quindi attivare un orientamento verso il cliente/utente e un orientamento verso il miglioramento della qualità dei servizi/prodotti. In ambito pubblico più che di customer satisfaction si parla di citizen satisfaction, cioè della soddisfazione del cittadino.</p>
+   </div>
+    <div id="ecomm" class="tab-pane fade">
+      <h3 style="text-align:center;">E-Commerce</h3>
+      <p>E-commerce is the activity of buying or selling products on online services or over the Internet. Modern electronic commerce typically uses the World Wide Web for at least one part of the transaction's life cycle although it may also use other technologies such as e-mail. Typical e-commerce transactions include the purchase of online books (such as Amazon) and music purchases (music download), and to a less extent, customized/personalized online store or even sale of food products online. E-commerce is conducted using a variety of applications, such as email, online catalogs and shopping carts, EDI, File Transfer Protocol, and web services.</p>
+      <p>This includes business-to-business activities and outreach such as using email for unsolicited ads (usually viewed as spam) to consumers and other business prospects, as well as to send out e-newsletters to subscribers. More companies now try to entice consumers directly online, using tools such as digital coupons, social media marketing and targeted advertisements.
+The benefits of e-commerce include its around-the-clock availability, the speed of access, the wide availability of goods and services for the consumer, easy accessibility, and international reach. </p>
+    </div>
+    <div id="global" class="tab-pane fade">
+      <h3 style="text-align:center;">Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+    <div id="pasolini" class="tab-pane fade">
+      <h3 style="text-align:center;">Pasolini no-global?</h3>
+<img src="immagini/pasolini.jpg" class="img-responsive alignleft" style="width:10%;">
+      <p>Nel corso degli anni Sessanta, Pasolini mette in atto il suo processo di critica più ferrato contro l'instaurarsi della “civiltà dei consumi”, dovuta al boom economico. Egli comincia ad osservare una lenta integrazione del sottoproletariato con il resto della società ed una conseguente creazione di un indifferenziato universo piccolo borghese; questo è uno dei punti cardinali su cui si basa la critica di Pasolini, che si batte in modo accanito contro la società neocapitalistica dello “sviluppo” e del “benessere”. Egli accusa il «nuovo fascismo» consumistico che punta all'«omologazione brutalmente totalitaria del mondo», che porta ad una conseguente eliminazione delle differenze individuali, sociali ed etniche, e che di fatto nega la libertà.
+La globalizzazione come impoverimento nazionale, culturale e dialettale.</p>
+<p>Mezzi come la televisione, la radio e la stampa, fanno le veci della globalizzazione: portano a conoscenza dei popoli ciò che in altri è usanza o tradizione, provocando un conseguente cambiamento negli usi e nei costumi nazionali.
+Inoltre, con la globalizzazione si viene a conoscenza di nuovi stili di vita e quindi di bisogni che prima ci erano sconosciuti. Ne deriva il fatto che dopo sentiremo anche noi il bisogno di possedere certi beni per soddisfare nuovi bisogni, mettendo in atto un meccanismo continuo di consumo di beni sempre diversi e sempre meno utili.</p>
+<p>Questa è, in poche parole, la tesi di Pasolini: la globalizzazione porta all'impoverimento nazionale in termini culturali, poiché tende ad omogeneizzare tutti gli esseri viventi in un unico gruppo con le stesse prerogative, gli stessi bisogni, gli stessi comportamenti e la stessa lingua. Da qui si può notare la “perdita dei dialetti” di cui parla lo scrittore.</p>
+   </div>
+   </div>
+  </div>
+</div>
+<footer>
+</footer>
+</body>
+</html>
